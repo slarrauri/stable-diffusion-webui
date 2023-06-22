@@ -30,4 +30,4 @@ ADD --chown=user https://huggingface.co/ckpt/anything-v4.5-vae-swapped/resolve/m
 EXPOSE 7860
 
 ENTRYPOINT ["python", "launch.py", "--listen", "--data-dir", "/app/data", "--disable-console-progressbars", "--enable-insecure-extension-access"]
-CMD ["--skip-torch-cuda-test", "--api", "--opt-sdp-no-mem-attention", "--opt-channelslast", "--use-cpu all"]
+CMD ["--skip-torch-cuda-test", "--use-cpu"]
